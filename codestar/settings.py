@@ -34,7 +34,7 @@ DEBUG = False
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ["djangoblogjohann-a61df7e58294.herokuapp.com"]
+ALLOWED_HOSTS = ["8000-johannhelbert-djangoblog-qzxtxf0thx.us2.codeanyapp.com"]
 
 # Application definition
 
