@@ -12,9 +12,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 import os
 from pathlib import Path
-
-import dj_database_url
 from django.contrib.messages import constants as messages
+import dj_database_url
 if os.path.isfile("env.py"):
     import env
 
@@ -32,9 +31,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-X_FRAME_OPTIONS = 'SAMEORIGIN'
+ALLOWED_HOSTS = ['djangoblogjohann-2baf5027d75b.herokuapp.com' 'localhost'
+    ]
 
-ALLOWED_HOSTS = ['djangoblogjohann-a61df7e58294.herokuapp.com', 'localhost']
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 # Application definition
 
@@ -71,7 +71,6 @@ MESSAGE_TAGS = {
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
