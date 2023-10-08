@@ -47,12 +47,12 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
-    'crispy-forms',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
     'django_summernote',
     'blog',
+    'crispy_forms',
 ]
 
 SITE_ID = 1
